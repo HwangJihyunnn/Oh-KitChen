@@ -1,0 +1,508 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'GmarketSansMedium'; 
+    font-size: 16px; 
+    color: #555;
+    overflow-x:hidden;
+}
+#wrap {position: relative;width: 100%; min-height: calc(100vh - 300px);}
+
+
+
+/* 탑 검색 상단 */
+header { background: #dd2f3a;}
+#header_top {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px; 
+    text-align: center;
+}
+#header_top input { 
+    margin: 0 auto;
+    width: 700px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    background: #dd2f3a;
+    color: #fff;
+    padding: 20px; 
+    display: inline-block;
+    outline: none;
+}
+#header_top input::placeholder {color: #fff;}
+#header_top .top_right { color: #fff; }
+#header_top .top_right li {float: left; margin-left: 30px;}
+.media_menu {width: 30px; height: 30px; margin-left: 10px; display: none;}
+.media_menu img{max-width: 100%;}
+
+/* 메뉴 */
+#btm_shadow {box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3); background: #fff; height: 50px; padding: 10px 0; }
+#header_btm {
+    width: 1200px; 
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: #fff;
+    
+    
+}
+#header_btm .gnb > .left {
+    width: 60%;
+    float: left; 
+    display: flex;
+}
+/* 왼쪽 큰 카테고리 메뉴 */
+#header_btm .gnb > .left > .big {position: relative; width: 180px;}
+#header_btm .gnb > .left > .big a{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 700;    
+    overflow: hidden;
+    text-align: center;
+}
+#header_btm .gnb > .left > .big a:hover {color: #dd2f3a;}
+#header_btm .gnb > .left > .big:last-child{color: #dd2f3a;}
+
+/*서브메뉴 */
+#header_btm .gnb > .left > .big > .subb {
+    position: absolute;
+    left: 0; top: 48px;
+    display: flex;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+#header_btm .gnb > .left > .big > .subb a {
+    font-size: 16px;
+    color: #777;
+    font-weight: 400;
+    margin-right: 40px;
+}
+#header_btm .gnb > .left > .big > .subb a:hover {background: #eee;}
+#header_btm .gnb > .left > .big > .subb > .sub {
+    display: none;
+    padding: 20px;
+    width: 150px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 20;
+}
+#header_btm .gnb > .right {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    width: 40%;
+    
+}
+#header_btm .gnb > .right li {float: left;}
+#header_btm .gnb > .right li:last-child{ margin-left: 25px;}
+
+/* 메인 이미지 슬라이드 */
+.swiper {
+    margin-top: 4px;
+width: 100%;
+height: 650px;
+}
+.swiper-slide img {
+position: relative;
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    background: url(../img/visual_arrow.png) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev {
+    background: url(../img/visual_arrow.png) no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {display: none;}
+
+.swiper-pagination-bullet {
+    background: #A20A1F !important;
+  }
+
+/* 메인 이미지 텍스트 */
+.mainText {
+    position: absolute; 
+    top: 20%; left: 50px; 
+    color: #fff; 
+}
+.mainText h1 {font-size:36px;color: #fff;}
+.mainText h2 {font-size:65px; color: #fff;}
+.mainText #tag {
+    padding: 5px 10px;
+    font-size:22px; 
+    background: #fff; 
+    color: #555; 
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+#mainBtn {
+    display: block;
+    background: #f64646;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 25px;
+    cursor: pointer;
+}
+#mainBtn:after{background: url(../img/visual_start.png) no-repeat;}
+
+/* stepList 이건 어때요?? */
+#stepList {
+    margin: 0 auto;
+    margin-top: 120px;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#stepList .line {width: 40px; height: 2px; background: #333;}
+#stepList img{width: 100%;}
+#stepList h1 {
+    font-size:20px; 
+    color: #333; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#stepList h2 {font-size: 20px; color: #333; font-weight: bold; padding: 10px;}
+#stepList .stepTag {font-size: 16px; color: #ccc;}
+.step1 > .big {
+    color: #111; 
+    font-size: 40px; 
+    line-height: 1.2;
+    font-weight: bold;
+}
+.step1 .step1Small {
+    color: rgba(0, 0, 0, 0.5); 
+    font-size: 18px;
+    margin-top: 30px;
+}
+.step1 .step1Text a{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 20px;
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    border: 1px solid #ccc; 
+    border-radius: 50px;
+}
+.step1 .step1Text a:hover {
+    background:#F64646 ; 
+    color: #fff; 
+    border: 1px solid #F64646;
+}
+.step2, .step3 {padding: 20px; text-align: center;}
+.kidSlide {width: 250px; height: 250px; position: relative; overflow: hidden; z-index: 10;}
+.kidSlide ul {position: absolute; top: 0; left: 0; width: 750px;display: flex;}
+.kidSlide ul li{width: 250px; height: 250px; overflow: hidden; position: relative; }
+.kidSlide ul li.s1{background: url(../img/@class_img1.png)no-repeat center/cover;}
+.kidSlide ul li.s2{background: url(../img/@class_img2.png)no-repeat center/cover;}
+.kidSlide ul li.s3{background: url(../img/@class_img3.png)no-repeat center/cover;}
+.slideText {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.7); width: 100%;}
+.step2 {background: #FFED93; }
+.step3 {background: #F5EEE5;}
+.step4 {
+    position: relative;
+    text-align: left;
+}
+.step4 > .step4inner {
+    position: absolute;
+    top: 0; left: 0;
+    font-size: 33px;
+    padding: 20px;
+}
+.step4 > .step4inner > a .white {font-size: 33px; color: #fff; font-weight: bold;} 
+.step4 > .step4inner > a .white2 {font-size: 16px; color: #fff;}
+/* 배너 */
+#banner {
+    position: relative;
+    margin-top: 150px;
+    width: 100%; 
+    height: 400px;
+    background: url(../img/section02_bg.jpg) no-repeat center;
+}
+#banner .bannerText {
+    margin: 0 auto;
+    height: 200px;
+    text-align: center;
+    font-weight: 500;
+}
+#banner .bannerText h1 {display: inline-block; margin-top: 50px;}
+.bannerText h1 > .red {font-size: 37px; color: #F64646; font-weight: 500;}
+.bannerText h1 > .center {font-size: 30px; color: #333; font-weight: 500;}
+.bannerText h1 > .bottom {font-size: 42px; color: #333; font-weight: 700;}
+.bannerText h1 > .go {
+    display: inline-block;
+    font-size: 20px; 
+    color: #333; 
+    border: 2px solid #333;
+    border-radius: 50px;
+    padding: 5px 25px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+.bannerText h1 > .go:hover {color: #fff; background: #333;}
+
+/* 추천레시피 */
+#like {width: 1200px; margin: 0 auto; height: 1000px; } 
+#like > .line {
+    width: 40px; 
+    height: 2px; 
+    background: #333; 
+    margin: 30px auto;
+}
+#like > h1 {font-size:40px; margin-bottom: 20px; text-align: center; color: #333;}
+#like > h2 {font-size:20px; margin: 30px 0;  text-align: center; color: #777;}
+#like .like1 {
+    float: left; 
+    width: 550px;
+    height: 100%;
+    margin-right: 50px;
+    overflow: hidden;
+}
+#like .like1 img {width: 100%; overflow: hidden; transition: all 0.3s ease-in-out}
+#like .like1 .like_big1 .imgBox {width: 550px; height: 350px; overflow: hidden;}
+#like .like1  a:hover img { transform: scale(1.2);}
+#like .like1 h3 {margin-top: 20px;}
+#like .like1 h3 > .BigId {font-size: 30px; color: #333; font-weight: bold;}
+#like .like1 h3 > .Id {font-size: 22px; color: #333; font-weight: bold;}
+#like .like1 h3 > .tag, .Bigtag {font-size: 16px; color: #666;}
+#like .like1 .like_big1 {background: #FFED93; width: 100%;}
+#like .like1 .like_big1 > h3 {padding: 20px;}
+#like .like1 .small_list1 .imgBox2 {width: 100%; overflow: hidden;}
+#like .like1 .small_list1 .imgBox2 img {width: 100%; display: block; height: 100%;}
+#like .like1 .small_list1 {
+    color: inherit;
+    height: 100%;
+    margin-top: 30px;
+    display: block;
+}
+#like .like1 .small_list1 li {
+    float: left;
+    width: 270px;
+    height: 300px;
+    overflow: hidden;
+    margin-right: 5px;
+}
+#like .like2 .like_big2 .imgBox {width: 550px; height: 350px; overflow: hidden;}
+#like .like2 .small_list2 .imgBox2 {width: 100%; overflow: hidden;}
+#like .like2 .small_list2 .imgBox2 img {width: 100%; display: block; height: 100%;}
+#like .like2 {
+    float: left;
+    width: 550px;
+    height: 200px;
+}
+#like .like2 img {width: 100%; transition: all 0.3s; }
+#like a:hover img { transform: scale(1.2);}
+#like .like2 h3 {margin-top: 20px;}
+#like .like2 h3 > .BigId {font-size: 30px; color: #333; font-weight: bold;}
+#like .like2 h3 > .Id {font-size: 22px; color: #333; font-weight: bold;}
+#like .like2 h3 > .tag, .Bigtag {font-size: 16px; color: #666;}
+#like .like2 .like_big2 {
+    background: #FFED93; 
+    width: 100%; margin-top: 30px; 
+}
+#like .like2 .like_big2 > h3 {padding: 20px;}
+#like .like2 .small_list2 {display: flex; justify-content: space-between;
+}
+#like .like2 .small_list2 img {width: 100%;}
+#like .like2 .small_list2 li {float: left;width: 270px;height: 300px;overflow: hidden;}
+
+/* 셰프의 팁 */
+#tip {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    z-index:3;
+}
+#tip > h1 {font-size:40px; margin-top: 200px; text-align: center; color: #333;}
+#tip > h2 {font-size:20px;  margin: 30px; text-align: center; color: #777;}
+#tip > .line {
+    width: 40px; 
+    height: 2px; 
+    background: #333; 
+    margin: 30px auto;
+}
+.tip_list {position: relative;}
+.tip_list .tipList {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    text-align: center;
+}
+.tip_list .tipList li {
+    width: calc(100% - 20px); 
+    height: 100%;
+    margin-left: 20px; 
+    text-align: center;
+}
+.tip_list .tipList li img{width: 550px;}
+.tip_list .go {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 25px;
+}
+.tip_list .go a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 70px;
+    font-size: 20px;
+    text-align: center;
+    color: #333; 
+    border: 2px solid #333;
+    border-radius: 50px;
+}
+.tip_list > .go a:hover {background: #333; color: #fff;}
+.tipList h3 {margin-top: 20px;}
+.tipList h3 > .BigId {font-size: 30px; color: #333; font-weight: bold;}
+.tipList h3 > .Id {font-size: 22px; color: #333; font-weight: bold;}
+.tipList h3 > .tag, .Bigtag {font-size: 16px; color: #666;}
+
+/* 두번째 배너 */
+#banner2 {
+    position: absolute;
+    background: url(../img/section04_bg.jpg) center/cover;
+    margin-top: -300px;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+}
+/* 인기 레시피 */
+.icon {font-size: 14px; display: flex; position: absolute; bottom: 60px; right: 10px;}
+.icon p{line-height: 3.7; text-align: center; margin-right: 10px;}
+.like{width: 50px; height: 50px; background: #ED4043;color: #fff; border-radius: 50%; }
+.best {width: 50px; height: 50px; background: #F49700;color: #fff; border-radius: 50%;}
+#bot_list {width: 1200px; margin: 0 auto; height: 100%;}
+#bot_list > h1 {font-size:40px; margin-top: 100px; text-align: center; color: #333;}
+#bot_list > h2 {font-size:20px;  text-align: center; color: #777; padding: 20px;}
+#bot_list h3 { margin-top: 10px;}
+#bot_list h3 > .BigId {font-size: 30px; color: #333;  margin-top: 20px;}
+#bot_list h3 > .Id {font-size: 22px; color: #333; font-weight: 500;}
+#bot_list h3 > .tag, .Bigtag {font-size: 16px; color: #666;margin-top: 20px;}
+#bot_list > .line {
+    width: 40px; 
+    height: 2px; 
+    background: #333; 
+    margin: 30px auto;
+}
+#bot_list .botList1 ul {display: flex;justify-content: space-between;margin-bottom: 30px;
+}
+#bot_list .botList1 ul > li {
+    width: 400px;
+    height: 100%;
+    margin-right: 20px;
+    vertical-align: bottom;
+    position: relative
+}
+#bot_list .botList1 .imgBox { max-width: 100%; overflow: hidden; ;}
+#bot_list .botList1 .imgBox img {max-width: 100%;transition: all 0.2s linear;}
+.imgBox:hover img{transform: scale(1.2);}
+.imgBox a{display: block; font-size: 0;}
+#bot_list .botList2 ul {display: flex;justify-content: space-between;margin-bottom: 30px;
+}
+#bot_list .botList2 ul > li {
+    width: 400px;
+    height: 100%;
+    margin-right: 20px;
+    vertical-align: bottom;
+    position: relative;
+}
+#bot_list .botList2 .imgBox {max-width: 100%; overflow: hidden; }
+#bot_list .botList2 .imgBox img {max-width: 100%;transition: all 0.2s linear;}
+.botList2 > h3 >.icon{display: inline-block; position: absolute; bottom: 0; right: 0; background: #ccc;}
+/* botton_banner */
+#bottom_banner {
+    position: relative;
+    display: flex;
+    width: 100%; 
+    height: 300px;
+    background: url(../img/book_banner.jpg) no-repeat center/cover;
+}
+#bottom_banner .banner_bottom {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+#bottom_banner .banner_bottom h1 { margin-top: 50px;}
+.banner_bottom h1 > .red {font-size: 37px; color: #F64646; font-weight: 500;}
+.banner_bottom h1 > .center {font-size: 30px; color: #333; font-weight: 500;}
+.banner_bottom h1 > .bottom {font-size: 42px; color: #333; font-weight: 700;}
+.banner_bottom h1 > .go {
+    display: inline-block;
+    font-size: 20px; 
+    color: #333; 
+    border: 2px solid #333;
+    border-radius: 50px;
+    padding: 5px 25px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+.banner_bottom h1 > .go:hover {color: #fff; background: #333;}
+
+/* footer */
+#footer {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    left: 0; bottom: 0;
+    color: #fff;
+    background: #A20A1F;
+}
+.f-inner { margin: 0 auto; width: 1200px;}
+.footer_top {width: 1200px;}
+#footer_bottom {background: #dd2f3a; height: 80%;}
+.f-Binner {display: flex; width: 1200px; margin: 0 auto;}
+
+#footer_top > ul {display: flex; padding: 10px;}
+#footer_top > ul > li > a {display: block;font-size: 20px;padding: 10px;
+}
+
+.footer_left {width: 80%; padding: 10px;}
+.footer_left p:first-child {margin-top: 20px; font-weight: 700;}
+.footer_left p:last-child {margin-top: 50px; font-size: 14px;}
+.f-Binner > .footer_right { width: 20%; padding: 10px;
+}
+.f-Binner > .footer_right > select {
+    padding: 15px 30px;
+    margin: 30px 0;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #666;
+}
+.f-Binner > .footer_right > .sns {text-align: center;}
+.f-Binner > .footer_right > .sns i {padding: 10px;}
+.f-Binner > .footer_right > .sns img {width: 40px; height: 40px; filter: invert(100%);}
+

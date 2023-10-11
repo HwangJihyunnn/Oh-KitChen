@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오뚜기</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/반응형.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="header_top">
+                <h1><a href="index.html"><img src="img/logo.png" alt="홈 바로 가기"></a></h1>
+                <div class="input">
+                    <input type="text" placeholder="오뚜기 제품, 요리명 등 다양하게 검색해보세요!(예:카레)" onfocus="this.value='';"  >
+                </div>
+                <div class="top_right">
+                    <ul>
+                        <li><a href="#">#라면맛집</a></li>
+                        <li><a href="#">#XO만두</a></li>
+                    </ul>
+                </div>
+                <div class="media_menu"><a href="#"><img src="img/mediaMenu.png" alt="반응형메뉴"></a></div>
+            </div>
+        </header>
+        <div id="btm_shadow">
+            <div id="header_btm">
+                <nav class="gnb">
+                    <ul class="left">
+                        <li class="big">
+                            <a href="#">카테고리</a>
+                            <div class="subb">
+                                <ul class="sub">
+                                    <li><a href="#">종류</a></li>
+                                    <li><a href="#">재료</a></li>
+                                    <li><a href="#">방법</a></li>
+                                    <li><a href="#">테마</a></li>
+                                    <li><a href="#">기념일</a></li>
+                                    <li><a href="#">도구</a></li>
+                                </ul>
+                                <ul class="sub">
+                                    <li><a href="#">#카레</a></li>
+                                    <li><a href="#">#마요네스</a></li>
+                                    <li><a href="#">#분식</a></li>
+                                    <li><a href="#">#브런치</a></li>
+                                    <li><a href="#">#집밥</a></li>
+                                    <li><a href="#">#치즈듬뿍</a></li>
+                                    <li><a href="#">#캠핑</a></li>
+                                    <li><a href="#">#간단꿀조합</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="big" ><a href="sub1.html">인기 레시피</a></li>
+                        <li class="big"><a href="sub2.html">신규 레시피</a></li>
+                        <li class="big"><a href="sub3.html">계량 팁</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#">오뚜기몰</a></li>
+                        <li><a href="#">최근본레시피</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- //header 끝 -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/main_visual01.jpg" alt="">
+                <div class="mainText">
+                    <h1>오뚜기 간편식이 요리가 되는 팁!</h1>
+                    <h2>요리의 업그레이드 셰프의 팁</h2>
+                    <span id="tag"><a href="#">#얼큰한</a></span>
+                    <span id="tag"><a href="#">#열라면</a></span>
+                    <span id="tag"><a href="#">#순두부열라면</a></span>
+                    <button id="mainBtn">셰프의 팁 테마 보기</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_visual02.jpg" alt="">
+                <div class="mainText">
+                    <h1>빠르고 간편하게 하지만 맛은 최고!</h1>
+                    <h2>10분 내로~ <br> 스피드레시피</h2>
+                    <span id="tag"><a href="#">#XO만두</a></span>
+                    <span id="tag"><a href="#">#떡만둣국</a></span>
+                    <span id="tag"><a href="#">#뜨끈한국물</a></span>
+                    <button id="mainBtn">스피드 테마 보기</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_visual03.jpg" alt="">
+                <div class="mainText">
+                    <h1>쉽고 빠르게 따라 할 수 있는!</h1>
+                    <h2>새내기 요리사 초보 레시피</h2>
+                    <span id="tag"><a href="#">#토마토냉파스타</a></span>
+                    <span id="tag"><a href="#">#에그마요샌드위치</a></span>
+                    <button id="mainBtn">왕초보 테마 보기</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_visual04.jpg" alt="">
+                <div class="mainText">
+                    <h1>향신료의 매력에 푹 빠지고 싶다면?</h1>
+                    <h2>허브스파이스 전문 도서관 <br> 라이브러리 H</h2>
+                    <button id="mainBtn">자세한 이용 방법 보기</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_visual05.jpg" alt="">
+                <div class="mainText">
+                    <h1>간편하게 완성하는 브런치 메뉴</h1>
+                    <h2>더치베이비 <br> 팬케이크</h2>
+                    <span id="tag"><a href="#">#생일축하해</a></span>
+                    <span id="tag"><a href="#">#핫케이크</a></span>
+                    <button id="mainBtn">생일테마 바로가기</button>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/main_visual06.jpg" alt="">
+                <div class="mainText">
+                    <h1>간편하지만 정성스러운 한끼! <br> 갓 지은 솥밥으로</h1>
+                    <h2>맛있고 든든하게 영양 챙기기</h2>
+                    <span id="tag"><a href="#">#채식</a></span>
+                    <span id="tag"><a href="#">#카레토마토솥밥</a></span>
+                    <button id="mainBtn">레시피 바로보기</button>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-pagination mainbtn"></div>
+        </div>
+        <!-- //메인 이미지 슬라이드 끝 -->
+        <div id="stepList">
+            <div class="step1">
+                <p class="big">이건 어때요? <br> 인기 검색어</p>
+                <div class="line"></div>
+                <p class="step1Small">고민을 덜어주는 추천 검색어</p>
+                <p class="step1Text"><a href="#">#카레</a></p>
+                <p class="step1Text"><a href="#">#마요네즈</a></p>
+                <p class="step1Text"><a href="#">#분식</a></p>
+                <p class="step1Text"><a href="#">#브런치</a></p>
+                <p class="step1Text"><a href="#">#집밥</a></p>
+                <p class="step1Text"><a href="#">#치즈듬뿍</a></p>
+                <p class="step1Text"><a href="#">#캠핑</a></p>
+                <p class="step1Text"><a href="#">#간단 꿀조합</a></p>
+            </div>
+            <div class="step2">
+                <h1>kid's Cooking<br><span>키즈셰프 레시피</span></h1>
+                <div class="kidSlide">
+                    <ul>
+                    <li class="s1">
+                        <div class="slideText">
+                            <h2 class="kidSmall">쨈 아이스크림</h2>
+                            <p class="kidTag">#쨈아이스크림 #딸기쨈 #포도쨈</p>
+                        </div>
+                    </li>
+                    <li class="s2">
+                        <div class="slideText">
+                            <h2 class="kidSmall">옥수수푸딩</h2>
+                            <p class="kidTag">#옥수수푸딩 #콘스프</p>
+                        </div>
+                    </li>
+                    <li class="s3">
+                        <div class="slideText">
+                            <h2 class="kidSmall">피자토스트</h2>
+                            <p class="kidTag">#피자토스트 #피자소스 #피자</p>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+                <h2><a href="#"></a></h2>
+                
+            </div>
+            <div class="step3">
+                <h1>History<br><span>최근 본 레시피</span></h1>
+                <a href="#"><img src="img/@class_img3.png" alt="바로가기"></a>
+                <p class="stepTag">#핫케이크 #시나몬 #브런치</p>
+                <h2><a href="#">더치베이비 팬케이크</a></h2>
+            </div>
+            <div class="step4">
+                <a href="#"><img src="img/sec04_tip_bg.jpg" alt="바로가기"></a>
+                <div class="step4inner">
+                    <a href="#">
+                        <p class="white">오뚜기의<br>쉽고 간단한<br>계량 꿀팁!</p>
+                        <p class="white2">밥숟가락, 종이컵으로<br> 간단하게 쉽게 알려드립니다.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- //인기레시피 끝 -->
+        <article id="banner">
+            <div class="bannerText">
+                <h1>
+                    <span class="red">요리를 더 쉽게 <br></span>
+                    <span class="center">오뚜기몰의 각종 소스들로 모든 레시피를 보다<br></span>
+                    <span class="bottom">쉽게, 빠르게, 맛있게<br></span>
+                    <p class="go"><a href="#">오뚜기몰 가기</a></p>
+                </h1>
+            </div>
+        </article>
+        <!-- //첫번째 배너 끝 -->
+        <section id="like">
+            <h1 class="likee">추천레시피</h1>
+            <div class="line"></div>
+            <h2 class="likeee">오뚜기가 제안하는 레시피로 최고의 순간을 만들어보세요.</h2>
+            <div class="like1">
+                <div class="like_big1">
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="img/2021-05-29_147251679[22].jpg" alt="봄 된장 비빔밥">
+                        </a>
+                    </div>
+                    <h3>
+                        <p class="Bigtag">#요리초보 #요린이 #봄</p>
+                        <p class="BigId"><a href="#">봄 된장 비빔밥</a></p>
+                    </h3>
+                </div>
+                <div class="like_small1">
+                    <ul class="small_list1">
+                        <li>
+                            <div class="imgBox2">
+                                <a href="#">
+                                    <img src="img/2020-08-24_427850333[24].jpg" alt="에그마요 샌드위치">
+                                </a>
+                            </div>
+                                <h3>
+                                    <p class="tag">#갈릭아이올리 #계란요리 #브런치</p>
+                                    <p class="Id"><a href="#">에그마요 샌드위치</a></p>
+                                </h3>
+                        </li>
+                        <li>
+                            <div class="imgBox2">
+                                <a href="#">
+                                    <img src="img/2022-11-22_560625401[8].jpg" alt="열라면투움바">
+                                </a>
+                            </div>
+                            <h3>
+                                <p class="tag">#열라면 #투움바 #프레스코</p>
+                                <p class="Id"><a href="#">열라면 투움바</a></p>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="like2">
+                <div class="like_small2">
+                    <ul class="small_list2">
+                        <li>
+                            <div class="imgBox2">
+                                <a href="#">
+                                    <img src="img/2021-06-26_856606119[14].jpg" alt="돈까스 김치나베라면">
+                                </a>
+                            </div>
+                            <h3>
+                                <p class="tag">#열라면 #돈까스 #돈까스김치나베</p>
+                                <p class="Id"><a href="#">돈까스 김치나베 라면</a></p>
+                            </h3>
+                        </li>
+                        <li>
+                            <div class="imgBox2">
+                                <a href="#">
+                                    <img src="img/2023-02-08_361906995[4].jpg" alt="열라면투움바">
+                                </a>
+                            </div>
+                            <h3>
+                                <p class="tag">#딸기 #케이크 #핫케이크 믹스</p>
+                                <p class="Id"><a href="#">딸기케이크</a></p>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="like_big2">
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="img/2020-08-25_427865954[10].jpg" alt="한라산볶음밥">
+                    </div>
+                    </a>
+                    <h3>
+                        <p class="Bigtag">#볶음밥X라조장 #계란요리 #치즈듬뿍</p>
+                        <p class="BigId"><a href="#">한라산볶음밥</a></p>
+                    </h3>
+                </div>
+            </div>
+        </section>
+        <!-- //추천 레시피 끝 -->
+        <div id="tip">
+            <h1 class="tip_up">셰프의 팁 간편식 업그레이드</h1>
+            <div class="line"></div>
+            <h2 class="tip_tip">오뚜기 간편식이 근사한 요리가 되는 팁을 공개합니다.</h2>
+            <div class="tip_list">
+                <ul class="tipList">
+                    <li>
+                        <a href="#">
+                            <img src="img/2020-08-25_427865954[10].jpg" alt="한라산볶음밥">
+                        </a>
+                        <h3>
+                            <p class="Bigtag">#볶음밥X라조장 #계란요리 #치즈듬뿍</p>
+                            <p class="BigId"><a href="#">한라산볶음밥</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/2020-08-24_427853121[12].jpg" alt="완자꼬치">
+                        </a>
+                        <h3>
+                            <p class="Bigtag">#XO만두 #굴림만두 #캠핑</p>
+                            <p class="BigId"><a href="#">완자꼬치</a></p>
+                        </h3>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/2020-08-24_427854552[18].jpg" alt="초콜릿피자">
+                        </a>
+                        <h3>
+                            <p class="Bigtag">#냉동피자X초콜릿 #바나나 #단짠단짠</p>
+                            <p class="BigId"><a href="#">초콜릿피자</a></p>
+                        </h3>
+                    </li>
+                </ul>
+                <p class="go"><a href="#">더보기</a></p>
+            </div>
+        </div>
+        <!-- //셰프의 팁 끝 -->
+        <article id="banner2"></article>
+        <!-- //두번째 배너 -->
+        <div id="bot_list">
+            <h1 class="bot_Id">인기레시피</h1>
+            <div class="line"></div>
+            <h2 class="bot_bot">오'키친에서 많은 분들이 찾아본 인기 레시피를 소개합니다.</h2>
+            <div class="botList1">
+                <ul>
+                    <li>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="img/2020-08-25_427865954[12].jpg" alt="">
+                            </a>
+                        </div>
+                        <h3>
+                            <p class="tag">#덮밥요리 #오뚜기햄 #골드마요네스</p>
+                            <p class="Id"><a href="#">햄마요덮밥</a></p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="img/2020-08-25_427865954[2].jpg" alt="">
+                            </a>
+                        </div>
+                        <h3>
+                            <p class="tag">#파스타샐러드 #키즈셰프 #토마토퓨레</p>
+                            <p class="Id"><a href="#">토마토 냉파스타</a></p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="img/2020-08-25_427863666[8].jpg" alt="">
+                            </a>
+                        </div>
+                        <h3>
+                            <p class="tag">#치즈듬뿍 #단짠단짠 #골드마요네스</p>
+                            <p class="Id">콘치즈</p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="img/2020-08-25_427863666[2].jpg" alt="">
+                            </a>
+                        </div>
+                        <h3>
+                            <p class="tag">#3일숙성카레 #카레맛집 #쇠고기</p>
+                            <p class="Id"><a href="#">카레 비프 스튜</a></p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="botList2">
+                <ul>
+                    <li>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="img/2020-08-24_427854552[10].jpg" alt="">
+                            </a>
+                        </div>
+                        <h3>
+                            <p class="tag">#셰프의팁 #즉석국 #캠핑</p>
+                            <p class="Id"><a href="#">차돌박이 된장찌개</a></p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="img/2020-08-24_427853121[16].jpg" alt="">
+                            </a>
+                        </div>
+                        <h3>
+                            <p class="tag">#셰프의팁 #즉석국 #집밥</p>
+                            <p class="Id"><a href="#">육개장 칼국수</a></p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <a href="#">
+                                <img src="img/2020-08-24_427853121[14].jpg" alt="">
+                            </a>
+                        </div>
+                        <h3>
+                            <p class="tag">#집밥 #밑반찬 #꿀유자차</p>
+                            <p class="Id"><a href="#">유자 연근조림</a></p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                    <li>
+                    <div class="imgBox">
+                        <a href="#">
+                            <img src="img/2020-08-24_427850333[24].jpg" alt="">
+                        </a>
+                    </div>
+                        <h3>
+                            <p class="tag">#갈릭아이올리 #계란요리 #브런치</p>
+                            <p class="Id"><a href="#">에그마요 샌드위치</a></p>
+                            <div class="icon">
+                                <p class="like">추천</p>
+                                <p class="best">인기</p>
+                            </div>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- //인기레시피 끝 -->
+        <article id="bottom_banner">
+            <div class="banner_bottom">
+                <h1>
+                    <span class="red">향신료의 매력에 푹 빠지고 싶다면? <br></span>
+                    <span class="center">허브 스파이스 전문 도서관<br></span>
+                    <span class="bottom">라이브러리 H<br></span>
+                    <p class="go">자세한 이용 방법 보기</p>
+                </h1>
+            </div>
+        </article>
+    </div>
+    <!-- //wrap 끝 -->
+
+    <footer id="footer">
+        <div class="f-inner">
+            <div id="footer_top">
+                <ul>
+                    <li><a href="sub1.html">인기 레시피</a></li>
+                    <li><a href="sub2.html">셰프의 팁</a></li>
+                    <li><a href="sub3.html">신규 레시피</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer_bottom">
+            <div class="f-Binner">
+                <div class="footer_left">
+                    <p class="ceo">(주)오뚜기</p>
+                    <p class="add">경기도 안양시 동안구 홍안대로 405</p>
+                    <p class="copy">Copyright ⓒ ottogi co.,Ltd All Rights Reserved.</p>
+                </div>
+                <div class="footer_right">
+                    <select>
+                        <option value="0">FAMILY SITE</option>
+                        <option value="1">(주) 오뚜기</option>
+                        <option value="2">오뚜기몰</option>
+                        <option value="3">오뚜기함태호재단</option>
+                    </select>
+                    <section class="sns">
+                        <i class="face"><a href="#"><img src="img/free-icon-facebook-1051309.png" alt="페이스북"></a></i>
+                        <i class="face"><a href="#"><img src="img/free-icon-instagram-1400829.png" alt="인스타그램"></a></i>
+                        <i class="face"><a href="#"><img src="img/free-icon-twitter-3536464.png" alt="트위터"></a></i>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/oh.js"></script>
+</body>
+</html>

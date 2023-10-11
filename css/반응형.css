@@ -1,0 +1,58 @@
+/* 반응형 */
+@media screen and (max-width:1024px) {
+    body {width: 1024px;}
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* 공통 */
+    .line {display: none;}
+    #wrap,#header_btm {max-width: 1023px; margin: 0 auto;}
+    #banner, #banner2, #bottom_banner, #header_btm .gnb > .right, #header_top .top_right, #header_top input {display: none;}
+
+    /* 헤드 */
+    header {height: 50px; position: relative;}
+    #header_top{padding: 0; justify-content: center;}
+    #header_top h1 {display: flex; align-items: flex-start;  line-height: 1.8;}
+    #header_top h1 a{display: block; width: 100px; height: 10px;}
+    #header_top h1 img{max-width: 100%;}
+    /* 헤드 - 메뉴 */
+    #header_btm {padding: 5px 10px; margin: 0; display: flex; justify-content: center; align-items: center;}
+
+    #header_btm .gnb li{
+        border-right: 0; 
+        text-align: center;
+    }
+    #header_btm .gnb > .left > .big a {font-size: 16px; padding: 0; width: 150px;}
+    #header_btm .gnb > .left > .big:hover>a {background: #dd2f3a; color: #fff; }
+    #header_btm .gnb > .left > .big:hover {color: #fff; }
+
+    /* 슬라이드 */
+    .swiper {height: 270px;}
+    .mainText h1 {font-size:24px;}
+    .mainText h2 {font-size:28px;}
+    .mainText #tag {padding: 5px 7px;font-size:14px;}
+    #mainBtn {
+        padding: 5px 7px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 2;
+    }
+    /* 이건어때요? 추천검색어 */
+    #stepList { max-width: 1023px;}
+    .step1, .step2, .step3, .step4 {width: 250px; height: 400px;}
+    .step1 {text-align: center;}
+    .step1 .big {font-size: 20px;}
+    .step1 .step1Text {font-size: 16px;}
+    .step1 .step1Text a {font-size: 14px;}
+    .kidSlide ul li {max-width: 250px; height: 250px;}
+    
+    
+    
+
+
+
+    
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+
+}
